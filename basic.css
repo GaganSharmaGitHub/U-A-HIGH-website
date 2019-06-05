@@ -1,0 +1,36 @@
+div#head{height: 100px;
+background-color: rgb(43, 146, 194);
+color: floralwhite;
+font-size: 50px;
+text-align: center;}
+div#body{height: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.bodycomp{float: left;
+height: 1500px;
+border: gray 2px solid;}
+div#foot{height: 100px;
+font-size: 80px;}
+div#opbar{width: 15%;
+background-color: rgba(197, 230, 236, 0.726);}
+div#cont{width: 60%;
+background-color: rgba(220, 220, 220, 0.658);}
+div#ad{background-color: rgba(128, 128, 128, 0.712);
+width: 24%;}
+button.bar{background-color: rgba(128, 128, 128, 0);
+width: 100%;
+font-size: 200%;
+border: none;
+text-align: left;
+transition: 2s;
+margin-bottom: 5px;
+}
+
+button.bar:hover{
+    padding-left: 50px;
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: rgba(71, 118, 248, 0.774)}
+iframe.ad{width: 100%;
+height: 30%;}
+

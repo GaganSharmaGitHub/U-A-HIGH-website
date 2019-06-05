@@ -1,0 +1,22 @@
+table{width: 100%;}
+img:hover{width: 120%;
+transition: 1s;}
+img.teacher:hover{width: 120%;
+    transition: 1s;
+}
+
+div#staff1{
+    background-color: rgb(46, 145, 179);
+    border-radius: 10%;
+    width: 100%;
+    font-size: 200%;
+    height: fit-content;
+    color: aliceblue;
+    text-align: center;
+}
+div#staff{padding: 20px 20px 10px 10px;
+    margin: 20px 20px 10px 10px;
+border: solid 3px black;
+border-radius: 5%;
+width: fit-content;}
+img.teacher{width: 200px;}
