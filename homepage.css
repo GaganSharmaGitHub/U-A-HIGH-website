@@ -1,6 +1,5 @@
 table{width: 100%;}
-img:hover{width: 120%;
-transition: 1s;}
+
 img.teacher:hover{width: 120%;
     transition: 1s;
 }
