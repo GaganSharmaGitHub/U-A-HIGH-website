@@ -1,25 +1,35 @@
 div.comp{float: none;}
+html{scroll-behavior: smooth;
+scrollbar-base-color: turquoise;}
 div#head{height: 100px;
+    position: sticky;
+    top: 0px;
 background-color: rgb(43, 146, 194);
 color: floralwhite;
 font-size: 50px;
-text-align: center;}
+}
+h1{position: absolute;
+    top: -70px;}
 div#body{height: fit-content;
+    margin: 0px 0px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 div.bodycomp{float: left;
 height: 1500px;
 border: gray 2px solid;}
-div#foot{height: 100px;
-font-size: 80px;}
+div#foot{height: 1050px;
+font-size: 40px;}
 div#opbar:hover{left: 0px;
 transition: 0.5s}
+div.headcomp{float: left;
+display: inline;
+margin-right: 50px;}
 div#opbar{position: absolute;
-    left: -13%;
+    left: -16%;
     width: 15%;
 background-color: rgba(197, 230, 236, 0.726);}
-div#cont{width: 73%;
-   margin-left: 20px;
+div#cont{width: 75%;
+   margin-left: 0px;
 background-color: rgba(220, 220, 220, 0.658);}
 div#ad{background-color: rgba(128, 128, 128, 0.712);
 width: 24%;}
@@ -47,8 +57,65 @@ height: fit-content;
 }
 div#opbar:hover p.hide{visibility: hidden;
 }
-i{font-size:48px;color: rgb(43, 146, 194);
-animation: shake 1s infinite;
-position: relative;}
-@keyframes shake {from{left: -20px;}
-to{left: 20px;}}
+i#arr{font-size:48px;color: rgb(43, 146, 194);
+animation: shake 2s infinite;
+position: relative;
+border-top-right-radius: 30%;
+border-bottom-right-radius: 30%;
+background-color: rgba(197, 230, 236, 1)}
+@keyframes shake {from{left: 10px;}
+to{left: 60px;}}
+
+button#searchb{height: 50px;
+background-color: beige;
+border: black 2px solid;
+border-radius: 30%;
+font-size: 20px;
+width: fit-content;}
+input{height: 40px;
+margin-right: 10px;
+font-size: 35px;
+width: 170px;}
+b#searchb{visibility: hidden;
+display: none;}
+button#searchb:hover b#searchb{
+    text-decoration: none;
+    display: inline;
+    visibility: visible;}
+
+    button#searchb:hover{background-color: cornflowerblue;
+    color: cornsilk;
+transition: 0.5s;}
+
+button#btt{font-size:48px;color:white;
+    float: right;
+    animation: wob 2s infinite;
+position: sticky;
+bottom: 20px;
+left: 0px;
+background-color:rgb(46, 145, 179);
+border-radius: 50%;
+border: none;
+}
+button#btt:hover{color:rgb(46, 145, 179);
+background-color: white}
+@keyframes wob{0%{width: 80px;height: 80px;}
+25%{height: 70px;width: 90px;}
+75%{height: 90px; width: 70px;}
+100%{width: 80px;height: 80px;}}
+div#pop{ bottom: 40px;
+    z-index: 1;
+    position: absolute;
+    background-color: rgba(117, 206, 212, 0.589);
+    display: none;
+width: 600px;
+border: black solid 2px;
+padding: 20px 20px 20px 20px;}
+div#credit{position: relative;
+display: inline-block;
+}
+div#credit:hover div#pop{display: block;
+transition: 1s;}
+img.social{float: left;
+height:60px;
+margin:10px 10px 10px 10px; }
