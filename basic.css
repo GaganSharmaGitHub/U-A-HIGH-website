@@ -1,6 +1,9 @@
 div.comp{float: none;}
 html{scroll-behavior: smooth;
 scrollbar-base-color: turquoise;}
+div#head:hover{color: rgb(43, 146, 194);
+    transition: 0.5s;
+background-color: white;}
 div#head{height: 100px;
     position: sticky;
     top: 0px;
@@ -10,6 +13,7 @@ font-size: 50px;
 }
 h1{position: absolute;
     top: -70px;}
+    body{margin: 0px 0px 0px 0px;}
 div#body{height: fit-content;
     margin: 0px 0px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,11 +24,13 @@ border: gray 2px solid;}
 div#foot{height: 1050px;
 font-size: 40px;}
 div#opbar:hover{left: 0px;
+    position: fixed;
 transition: 0.5s}
 div.headcomp{float: left;
 display: inline;
 margin-right: 50px;}
 div#opbar{position: absolute;
+    height: fit-content;
     left: -16%;
     width: 15%;
 background-color: rgba(197, 230, 236, 0.726);}
@@ -91,6 +97,7 @@ button#btt{font-size:48px;color:white;
     float: right;
     animation: wob 2s infinite;
 position: sticky;
+animation-direction: alternate;
 bottom: 20px;
 left: 0px;
 background-color:rgb(46, 145, 179);
@@ -119,3 +126,65 @@ transition: 1s;}
 img.social{float: left;
 height:60px;
 margin:10px 10px 10px 10px; }
+
+
+div#allfly:hover{animation-play-state: paused;}
+img#flyimg:hover {
+    animation: shake 5s; 
+  
+    animation-iteration-count: infinite; 
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-5deg); }
+    20% { transform: translate(-3px, 0px) rotate(5deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(5deg); }
+    50% { transform: translate(-1px, 2px) rotate(-5deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-5deg); }
+    80% { transform: translate(-1px, -1px) rotate(5deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-5deg);}}
+  
+
+div#allfly{height: 100px;
+    position: fixed; 
+  top: 0px;
+  animation-direction: alternate;
+  left: 0px;
+    animation: fly 100s infinite;
+background-color: rgba(219, 107, 107, 0);}
+img#flyimg{height: 100px;}
+@keyframes fly{
+    0%{left: 0px;
+    top: 0px;}
+    10%{left: 10%;
+        top: 100%;}
+    20%{left: 50%;
+        top: 55%;}
+        25%{left: 30%;
+        top: 20%;}
+    30%{left: 100%;
+                top: 0%;}
+    40%{left: 50%;
+         top: 50%;}
+    50%{left: 70%;
+    top: 100%;}
+    60%{left:80%;
+        top: 90%;}
+    70%{left: 10%;
+        top: 50%;}
+    80%{left: 85%;
+                top: 0%;}
+    85%{left: 30%;
+        top: 60%;}
+    90%{left: 0%;
+        top: 0%;}
+     100%{left: 85%;
+            top: 90%;
+        display: none;}
+            
+                        
+}                        
