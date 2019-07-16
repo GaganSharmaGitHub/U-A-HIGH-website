@@ -1,6 +1,10 @@
 div.comp{float: none;}
+
+
 html{scroll-behavior: smooth;
-scrollbar-base-color: turquoise;}
+scrollbar-color: turquoise;}
+
+
 div#head:hover{color: rgb(43, 146, 194);
     transition: 0.5s;
 background-color: white;}
@@ -10,35 +14,53 @@ div#head{height: 100px;
 background-color: rgb(43, 146, 194);
 color: floralwhite;
 font-size: 50px;
+transition: 0.5s;
 }
+
+
+
 h1{position: absolute;
     top: -70px;}
-    body{margin: 0px 0px 0px 0px;}
+
+
+    body{margin: 0px 0px 0px 0px;
+    scrollbar-color: blue;}
+
+
 div#body{height: fit-content;
     margin: 0px 0px 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 div.bodycomp{float: left;
 height: 1500px;
 border: gray 2px solid;}
+
+
 div#foot{height: 1050px;
 font-size: 40px;}
+
+
 div#opbar:hover{left: 0px;
     position: fixed;
 transition: 0.5s}
 div.headcomp{float: left;
 display: inline;
 margin-right: 50px;}
-div#opbar{position: absolute;
+div#opbar{position: fixed;
     height: fit-content;
     left: -16%;
     width: 15%;
 background-color: rgba(197, 230, 236, 0.726);}
+
+
 div#cont{width: 75%;
    margin-left: 0px;
 background-color: rgba(220, 220, 220, 0.658);}
+
 div#ad{background-color: rgba(128, 128, 128, 0.712);
 width: 24%;}
+
 button.bar{background-color: rgba(128, 128, 128, 0);
 width: 100%;
 font-size: 200%;
@@ -53,7 +75,11 @@ button.bar:hover{
     padding-left: 50px;
     transition: 0.5s;
     cursor: pointer;
-    background-color: rgba(71, 118, 248, 0.774)}
+    background-color: rgba(71, 118, 248, 1);
+color: white;
+text-emphasis: emphasis;}
+
+
 iframe.ad{width: 100%;
 height: 30%;}
 
@@ -61,16 +87,25 @@ p.hide{text-align: right;
 visibility: visible;
 height: fit-content;
 }
-div#opbar:hover p.hide{visibility: hidden;
+div#opbar:hover p.hide{display: none;
 }
 i#arr{font-size:48px;color: rgb(43, 146, 194);
-animation: shake 2s infinite;
+animation: slide 2s infinite;
 position: relative;
+animation-direction: alternate;
 border-top-right-radius: 30%;
 border-bottom-right-radius: 30%;
 background-color: rgba(197, 230, 236, 1)}
-@keyframes shake {from{left: 10px;}
-to{left: 60px;}}
+i#arr:hover{animation-play-state: paused;}
+@keyframes slide {0%{left: 10px;}
+60%{left: 60px;}
+65%{left: 50px;}
+70%{left: 60px;}
+75%{left: 50px;}
+80%{left: 60px;}
+85%{left: 50px;}
+90%{left: 60px;}
+100%{left: 50px;}}
 
 button#searchb{height: 50px;
 background-color: beige;
@@ -117,9 +152,22 @@ div#pop{ bottom: 40px;
     display: none;
 width: 600px;
 border: black solid 2px;
+animation: color 1s ;
+animation-iteration-count: infinite;
 padding: 20px 20px 20px 20px;}
 div#credit{position: relative;
 display: inline-block;
+
+}
+@keyframes color{
+0%{background-color:  rgba(117, 206, 212, 0.589);}
+12%{background-color:  rgba(150, 33, 228, 0.589);}
+50%{background-color:  rgba(37, 226, 69, 0.589);}
+62%{background-color:  rgba(0, 35, 236, 0.589);}
+75%{background-color:  rgba(209, 124, 45, 0.589);}
+85%{background-color:  rgba(235, 10, 243, 0.589);}
+100%{background-color:  rgba(238, 255, 0, 0.589);}
+25%{background-color:  rgba(188, 216, 64, 0.589);}
 }
 div#credit:hover div#pop{display: block;
 transition: 1s;}
