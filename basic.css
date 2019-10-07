@@ -159,6 +159,12 @@ div#credit{position: relative;
 display: inline-block;
 
 }
+
+div#credit:hover div#pop{display: block;
+    transition: 1s;}
+    img.social{float: left;
+    height:60px;
+    margin:10px 10px 10px 10px; }
 @keyframes color{
 0%{background-color:  rgba(117, 206, 212, 0.589);}
 12%{background-color:  rgba(150, 33, 228, 0.589);}
@@ -169,11 +175,6 @@ display: inline-block;
 100%{background-color:  rgba(238, 255, 0, 0.589);}
 25%{background-color:  rgba(188, 216, 64, 0.589);}
 }
-div#credit:hover div#pop{display: block;
-transition: 1s;}
-img.social{float: left;
-height:60px;
-margin:10px 10px 10px 10px; }
 
 
 div#allfly:hover{animation-play-state: paused;}
